@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def print_reversed_list_integfer(my_list=[]):
-    if my_list is None:
-        print("", end="")
-    else:
-        my_list.reverse()
-        for i in my_list:
-            print("{:d}".format(i))
+    if isinstance(my_list, list):
+        reversed_list = my_list
+        reversed_list.reverse()
+
+        for element in reversed_list:
+            print("{:d}".format(element))
