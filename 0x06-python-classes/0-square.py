@@ -3,6 +3,6 @@
 
 
 class Square:
-    """eclares a square class"""
+    """Declares a square class"""
 
     pass
