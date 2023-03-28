@@ -5,7 +5,7 @@
 class Square:
     """Declares a square class"""
 
-    def __init_(self, size=0) -> None:
+    def __init__(self, size=0) -> None:
         """
         Initializes class attributes
 
