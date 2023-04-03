@@ -28,7 +28,7 @@ class Rectangle:
         """
         width setter
         """
-        if not insurance(value, int):
+        if not isinstance(value, int):
             raise TypeError('width must be >= 0')
         self.__width = value
 
