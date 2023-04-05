@@ -2,7 +2,7 @@
 """Defines a locked class."""
 
 
-class lockedClass:
+class LockedClass:
     """
     Prevent the user from instanting new LockedClass attributes
     for anything but attributes called 'first_name'.
