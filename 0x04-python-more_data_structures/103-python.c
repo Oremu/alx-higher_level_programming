@@ -44,7 +44,7 @@ void print_python_list(PyObject *p)
 	PyListObject *clone = (PyListObject *) p;
 
 	printf("[*] python list info\n");
-	list_len = pyList_GET_SIZE(p);
+	list_len = PyList_GET_SIZE(p);
 	printf("[*] Size of the Python List = %d\n", list_len);
 	printf("[*] Allocated = %d\n", (int) clone->allocated);
 
@@ -57,24 +57,3 @@ void print_python_list(PyObject *p)
 			print_python_bytes(item);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
