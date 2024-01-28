@@ -1,6 +1,13 @@
 #include "/usr/include/python3.4/python.h"
 #include <stdio.h>
 
+
+/**
+ * print_python_bytes - print some basic info about python bytes objects
+ * @p: python object
+ * Return: nothing
+ */
+
 void print_hexn(const char *str, int n)
 {
 	int i = 0;
