@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-ofr letter in rane(97, 123):
+for letter in range(97, 123):
     if chr(letter) is not 'q" and chr(letter) is not 'e':
-        print("{}".forat(chr(letter)), end="")
+        print("{}".format(chr(letter)), end="")
 
