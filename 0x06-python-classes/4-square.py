@@ -1,34 +1,31 @@
 #!/usr/bin/python3
-"""Square module"""
+"""Define a class Square."""
 
 
 class Square:
-    """Declares a square class"""
+    """Represent a square."""
 
-    def __init__(self, size=0) -> None:
-        """
-        Initializes the attributes
+    def __init__(self, size=0):
+        """Initialize a new square.
 
         Args:
-            size: size of square
+            size (int): The size of the new square.
         """
         self.size = size
 
     @property
     def size(self):
-        """Gets the attributes to be used in class"""
-        return self.__size
+        """Get/set the current size of the square."""
+        return (self.__size)
 
     @size.setter
     def size(self, value):
-        if (type(value) is not int):
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
+        self.__size = value
 
-        def area(self):
-            """Computes area of a square"""
-            return self.__size ** 2
-
+    def area(self):
+        """Return the current area of the square."""
+        return (self.__size * self.__size)
